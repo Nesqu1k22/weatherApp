@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #234a80;
+    
+    background-image: radial-gradient(#009299 1.5px, #234a80 1.5px);
+    background-size: 30px 30px;
+}
+
+
+h1{
+    font-family: 'Alata', sans-serif;
+}
+
+p{
+    font-family: 'Francois One', sans-serif;
+}
+
+h3{
+    font-family: 'Francois One', sans-serif;
+}
+
+.container__header{
+    background-color: #009299;
+    display: flex;
+    justify-content: center;
+}
+
+.title__header{
+    margin: 5px;
+}
+
+
+main{
+    min-height: 100vh;
+}
+
+.top_banner{
+    min-height: 400px;
+    background-image: url(/img/background.jpg);
+    background-size: 100%;
+}
+
+.container__banner {
+    padding-top: 3.2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3.2em;
+    color: aliceblue;
+}
+
+.title__banner {
+    color:aliceblue;
+    width: 340px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+}
+
+.form__banner{
+    font-family: 'Francois One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+input::placeholder {
+    opacity: .6;
+    color:aliceblue;
+}
+
+
+#search__imput {
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+    border: none;
+    border-bottom: solid 2px white;
+    height: 35px;
+    background-color: transparent;    
+}
+
+#search__imput2 {
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+    border: none;
+    border-bottom: solid 2px white;
+    height: 35px;
+    background-color: transparent;
+}
+
+#search__button{
+    cursor: pointer;
+    font-family: 'Francois One', sans-serif;
+    border-radius: 10px;
+    border-color: white;
+    color: black;
+    background-color: transparent;
+}
+
+article{
+    cursor: pointer;
+}
+
+/* CLASES PARA BACKGROUND*/
+.d01{
+    background-image: url(/img/cieloDespejado.jpg);   
+    background-size: 550px;
+    background-position: center;
+}
+.n01{    
+    background-size: 550px;
+    background-position: center;
+    background-image: url(/img/nocheDespejada.jpg);
+}
+.d02{
+    background-image: url(/img/cieloNublado.jpg);
+    background-size: 650px;
+    background-position: center;
+}
+.n02{
+    background-image: url(/img/nocheNublada.jpg);    
+    background-size: 550px;
+    background-position: center;
+}
+.d03{
+    background-image: url(/img/diaMuyNublado.jpg);    
+    background-size: 710px;
+    background-position: center;
+}
+.n03{
+    background-size: 700px;
+    background-position: center;
+    background-image: url(/img/nocheMuyNublada.jpg);
+}
+.d04{
+    background-size: 600px;
+    background-position: center;
+    background-image: url(/img/tormentaDia.jpg);
+}
+.n04{
+    background-size: 600px;
+    background-position: center;
+    background-image: url(/img/tormentaNoche.jpg);
+}
+.d10{
+    background-size: 550px;
+    background-position: center;
+    background-image: url(/img/lluviaLigera.jpg);
+}
+.n10{
+    background-size: 450px;
+    background-position: center;
+    background-image: url(/img/lluviaLigeraNoche.jpg);
+}
+.d11{
+    background-size: 600px;
+    background-position: center;
+    background-image: url(/img/Thunderstorm.jpg);
+}
+.n11{
+    background-size: 600px;
+    background-position: center;
+    background-image: url(/img/thunderstormNoche.jpg);
+}
+.d13{
+    background-size: 610px;
+    background-position: center;
+    background-image: url(/img/nieve.jpg);
+}
+.n13{
+    background-size: 500px;
+    background-position: center;
+    background-image: url(/img/nieveNoche.jpg);
+}
+.d50{
+    background-size: 500px;
+    background-position: center;
+    background-image: url(/img/nieblaDia.jpg);
+}
+.n50{
+    background-size: 500px;
+    background-position: center;
+    background-image: url(/img/nieblaNoche.jpg);
+}
+
+/* CLASES PARA BACKGROUND*/
+
+.boxs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box__container {    
+    position: relative;
+}
+
+/* Box Front */
+.container__boxFront{
+    cursor: default;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    transform: perspective(600px) rotateY(0deg);
+    
+    margin: 30px 5px 0 10px ;
+    clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+    height: 400px;
+    width: 450px;
+}
+
+.button__boxFront{
+    width: 35px;
+    position: absolute;
+    border: solid 1px white;
+    border-radius: 5px;
+    background-color: rgba(110, 118, 121, 0.403);
+    margin-top: 5px;
+    margin-left: 405px;
+}
+
+
+.title__boxFront{
+    margin-top: 80px;
+    font-size: 22px;
+    padding-left: 200px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(110, 118, 121, 0.403);
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.img__boxFront{
+    margin-left: 185px;
+    margin-bottom: 20px;
+    background-color: rgba(110, 118, 121, 0.403);
+    border-radius: 50%;
+}
+
+.temp__boxFront{
+    border-top: solid 1px white;
+    padding: 5px 0 5px 162px;
+    background-color: rgba(110, 118, 121, 0.403);
+}
+
+.description__boxFront{
+    border-bottom: solid 1px white;
+    padding: 0 0 5px 162px;
+    background-color: rgba(110, 118, 121, 0.403);
+}
+/* Box Front */
+
+/* Box Back */
+.container__boxBk {
+    cursor: default;
+    width: 450px;
+    height: 400px;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    transform: perspective(600px) rotateY(0deg);
+    clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+    padding-top: 20px;
+    margin: 30px 0px 0 10px ;
+}
+.container__boxBk img{
+    margin-top: 12px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: rgba(190, 197, 199, 0.403);
+}
+.container__boxBk p{
+    margin-top: 12px;
+    padding: 6px;
+    border-radius: 20px;
+    background-color: rgba(190, 197, 199, 0.403);
+}
+
+.head__boxBk{
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: rgba(110, 118, 121, 0.403);
+    max-width: 340px;
+    max-height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 80px;
+}
+.container__boxBk img.ubiIcon{
+    background: none;
+    margin-top: 0px;
+    margin-left: 95px;
+    width: 45px;
+}
+.title__boxBk{
+    margin-top: 10px;
+    text-align: initial;
+}
+.temp__boxBk{
+    font-size: 34px;
+    margin: 12px 0 0 65px;
+    
+}
+.desc__boxBk{
+    margin: 20px 0 0 15px;
+    text-align: initial;
+}
+
+.info__boxBk{ 
+    margin-top: 25px;
+    display: grid;
+    background-color: rgba(110, 118, 121, 0.403);
+    grid-template-columns: 230px 1fr;  
+}
+
+.windIcon{
+    margin-left: 135px;
+}
+
+.windSpd__boxBk{
+    margin-left: 90px;
+}
+
+
+.feelsIcon{
+    font-size: 18px;
+    margin-top: 12px;
+    margin-right: auto;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: rgba(190, 197, 199, 0.403);
+    margin-left: 120px;
+}
+
+.feels__boxBk{
+    margin-left: 80px;
+}
+
+.humIcon{
+    margin-left: 105px;
+}
+
+.hum__boxBk{
+    margin-left: 70px;
+}
+
+.tempMaxIcon{
+    margin-left: 95px;
+}
+
+.tempMax__boxBk{
+    margin-left: 60px;
+}
+
+.tempMinIcon{
+    margin-left: 85px;
+}
+
+.tempMin__boxBk{
+    margin-left: 50px;
+}
+
+.info__boxBk img{
+    width: 32px;  
+}
+/* Box Back */
+
+/* class to rotate box */
+.boxFrontHover{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.boxBkHover{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+/* footer */
+
+.container__footer{
+    
+    background-color: #009199;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social__footer{  
+    display: flex; 
+    margin: 10px;
+}
+
+.footer__img{
+    padding: 3px;
+    width: 40px;
+}
