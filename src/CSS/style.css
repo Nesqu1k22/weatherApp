@@ -41,7 +41,7 @@ main{
 
 .top_banner{
     min-height: 400px;
-    background-image: url(/src/img/background.jpg);
+    background-image: url(/src/img/background);
     background-size: 100%;
 }
 
@@ -110,84 +110,84 @@ article{
 
 /* CLASES PARA BACKGROUND*/
 .d01{
-    background-image: url(/src/img/cielodespejado.jpg);   
+    background-image: url(/src/img/cielodespejado);   
     background-size: 550px;
     background-position: center;
 }
 .n01{    
     background-size: 550px;
     background-position: center;
-    background-image: url(/src/img/nochedespejada.jpg);
+    background-image: url(/src/img/nochedespejada);
 }
 .d02{
-    background-image: url(/src/img/cielonublado.jpg);
+    background-image: url(/src/img/cielonublado);
     background-size: 650px;
     background-position: center;
 }
 .n02{
-    background-image: url(/src/img/nochenublada.jpg);    
+    background-image: url(/src/img/nochenublada);    
     background-size: 550px;
     background-position: center;
 }
 .d03{
-    background-image: url(/src/img/diamuynublado.jpg);    
+    background-image: url(/src/img/diamuynublado);    
     background-size: 710px;
     background-position: center;
 }
 .n03{
     background-size: 700px;
     background-position: center;
-    background-image: url(/src/img/nochemuynublada.jpg);
+    background-image: url(/src/img/nochemuynublada);
 }
 .d04{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/tormentadia.jpg);
+    background-image: url(/src/img/tormentadia);
 }
 .n04{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/tormentanoche.jpg);
+    background-image: url(/src/img/tormentanoche);
 }
 .d10{
     background-size: 550px;
     background-position: center;
-    background-image: url(/src/img/lluvialigera.jpg);
+    background-image: url(/src/img/lluvialigera);
 }
 .n10{
     background-size: 450px;
     background-position: center;
-    background-image: url(/src/img/lluvialigeranoche.jpg);
+    background-image: url(/src/img/lluvialigeranoche);
 }
 .d11{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/thunderstorm.jpg);
+    background-image: url(/src/img/thunderstorm);
 }
 .n11{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/thunderstormnoche.jpg);
+    background-image: url(/src/img/thunderstormnoche);
 }
 .d13{
     background-size: 610px;
     background-position: center;
-    background-image: url(/src/img/nieve.jpg);
+    background-image: url(/src/img/nieve);
 }
 .n13{
     background-size: 500px;
     background-position: center;
-    background-image: url(/src/img/nievenoche.jpg);
+    background-image: url(/src/img/nievenoche);
 }
 .d50{
     background-size: 500px;
     background-position: center;
-    background-image: url(/src/img/niebladia.jpg);
+    background-image: url(/src/img/niebladia);
 }
 .n50{
     background-size: 500px;
     background-position: center;
-    background-image: url(/src/img/nieblanoche.jpg);
+    background-image: url(/src/img/nieblanoche);
 }
 
 /* CLASES PARA BACKGROUND*/
