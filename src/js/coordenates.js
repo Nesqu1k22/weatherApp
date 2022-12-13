@@ -95,10 +95,10 @@ buildBox = (object) => {
     humSvg.src= './src/img/hum.svg'
     humSvg.classList.add('humIcon')
     const tempMaxSvg = document.createElement('img')
-    tempMaxSvg.src= './src/img/tempMax.svg'
+    tempMaxSvg.src= './src/img/tempmax.svg'
     tempMaxSvg.classList.add('tempMaxIcon')
     const tempMinSvg = document.createElement('img')
-    tempMinSvg.src= './src/img/tempMin.svg'
+    tempMinSvg.src= './src/img/tempmin.svg'
     tempMinSvg.classList.add('tempMinIcon')
 
     //CONTAINER
