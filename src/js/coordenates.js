@@ -84,21 +84,21 @@ buildBox = (object) => {
     // SVG 
     const ubiSvg = document.createElement('img')
     ubiSvg.classList.add('ubiIcon')
-    ubiSvg.src= '/img/ubi.svg'
+    ubiSvg.src= './src/img/ubi.svg'
     const windSvg = document.createElement('img')
-    windSvg.src= '/img/wind.svg'
+    windSvg.src= './src/img/wind.svg'
     windSvg.classList.add('windIcon')
     feelsTxt = document.createElement('h2')
     feelsTxt.textContent= 'feels'
     feelsTxt.classList.add('feelsIcon')
     const humSvg = document.createElement('img')
-    humSvg.src= '/img/hum.svg'
+    humSvg.src= './src/img/hum.svg'
     humSvg.classList.add('humIcon')
     const tempMaxSvg = document.createElement('img')
-    tempMaxSvg.src= '/img/tempMax.svg'
+    tempMaxSvg.src= './src/img/tempMax.svg'
     tempMaxSvg.classList.add('tempMaxIcon')
     const tempMinSvg = document.createElement('img')
-    tempMinSvg.src= '/img/tempMin.svg'
+    tempMinSvg.src= './src/img/tempMin.svg'
     tempMinSvg.classList.add('tempMinIcon')
 
     //CONTAINER
@@ -173,7 +173,7 @@ buildBox = (object) => {
     const desc = document.createElement('h3')
     desc.classList.add('description__boxFront')
 
-    buttonDelete.src = '/img/trash.svg'
+    buttonDelete.src = './src/img/trash.svg'
     title.textContent = object.city +' / '+ object.country
     img.src = object.image
     temp.textContent = object.temperature
