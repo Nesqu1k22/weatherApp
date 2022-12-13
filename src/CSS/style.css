@@ -110,84 +110,84 @@ article{
 
 /* CLASES PARA BACKGROUND*/
 .d01{
-    background-image: url(/src/img/cielodespejado);   
+    background-image: url(https://i.postimg.cc/gcqpXn2J/cielodespejado.jpg);   
     background-size: 550px;
     background-position: center;
 }
 .n01{    
     background-size: 550px;
     background-position: center;
-    background-image: url(/src/img/nochedespejada);
+    background-image: url(https://i.postimg.cc/9QB1yHqy/nochedespejada.jpg);
 }
 .d02{
-    background-image: url(/src/img/cielonublado);
+    background-image: url(https://i.postimg.cc/bwdfBgHD/cielonublado.jpg);
     background-size: 650px;
     background-position: center;
 }
 .n02{
-    background-image: url(/src/img/nochenublada);    
+    background-image: url(https://i.postimg.cc/FsyxQXpw/nochenublada.jpg);    
     background-size: 550px;
     background-position: center;
 }
 .d03{
-    background-image: url(/src/img/diamuynublado);    
+    background-image: url(https://i.postimg.cc/HW2GWR68/diamuynublado.jpg);    
     background-size: 710px;
     background-position: center;
 }
 .n03{
     background-size: 700px;
     background-position: center;
-    background-image: url(/src/img/nochemuynublada);
+    background-image: url(https://i.postimg.cc/63FhB9Dx/nochemuynublada.jpg);
 }
 .d04{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/tormentadia);
+    background-image: url(https://i.postimg.cc/q7yJ1Q4c/tormentadia.jpg);
 }
 .n04{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/tormentanoche);
+    background-image: url(https://i.postimg.cc/c19SMPfy/tormentanoche.jpg);
 }
 .d10{
     background-size: 550px;
     background-position: center;
-    background-image: url(/src/img/lluvialigera);
+    background-image: url(https://i.postimg.cc/dQnXcd08/lluvialigera.jpg);
 }
 .n10{
     background-size: 450px;
     background-position: center;
-    background-image: url(/src/img/lluvialigeranoche);
+    background-image: url(https://i.postimg.cc/854yDQT1/lluvialigeranoche.jpg);
 }
 .d11{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/thunderstorm);
+    background-image: url(https://i.postimg.cc/SRWcqc6c/thunderstorm.jpg);
 }
 .n11{
     background-size: 600px;
     background-position: center;
-    background-image: url(/src/img/thunderstormnoche);
+    background-image: url(https://i.postimg.cc/G2v4sd4C/thunderstormnoche.jpg);
 }
 .d13{
     background-size: 610px;
     background-position: center;
-    background-image: url(/src/img/nieve);
+    background-image: url(https://i.postimg.cc/MZ47BKPC/nieve.jpg);
 }
 .n13{
     background-size: 500px;
     background-position: center;
-    background-image: url(/src/img/nievenoche);
+    background-image: url(https://i.postimg.cc/V6vtS3js/nievenoche.jpg);
 }
 .d50{
     background-size: 500px;
     background-position: center;
-    background-image: url(/src/img/niebladia);
+    background-image: url(https://i.postimg.cc/4yMQNXqT/niebladia.jpg);
 }
 .n50{
     background-size: 500px;
     background-position: center;
-    background-image: url(/src/img/nieblanoche);
+    background-image: url(https://i.postimg.cc/RFpcXMMn/nieblanoche.jpg);
 }
 
 /* CLASES PARA BACKGROUND*/
