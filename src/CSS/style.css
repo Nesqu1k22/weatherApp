@@ -203,6 +203,7 @@ article{
     position: relative;
 }
 
+
 /* Box Front */
 .container__boxFront{
     cursor: default;
@@ -217,6 +218,7 @@ article{
     width: 450px;
 }
 
+
 .button__boxFront{
     width: 35px;
     position: absolute;
@@ -225,8 +227,13 @@ article{
     background-color: rgba(110, 118, 121, 0.403);
     margin-top: 5px;
     margin-left: 405px;
+    cursor: pointer;
+    transition: .4s;
 }
 
+.button__boxFront:hover{
+    background-color: rgba(190, 116, 116, 0.936);
+}
 
 .title__boxFront{
     margin-top: 80px;
@@ -256,6 +263,22 @@ article{
     border-bottom: solid 1px white;
     padding: 0 0 5px 162px;
     background-color: rgba(110, 118, 121, 0.403);
+}
+
+.frontButton__Rotationbox{
+    width: 35px;
+    position: absolute;
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: rgba(110, 118, 121, 0.403);
+    top: 360px;
+    left: 325px;
+    cursor: pointer;
+    transition: .4s;
+}
+.frontButton__Rotationbox:hover{ 
+    background-color: rgba(198, 201, 202, 0.936);
+    left: 335px;
 }
 /* Box Front */
 
@@ -318,7 +341,7 @@ article{
 }
 
 .info__boxBk{ 
-    margin-top: 25px;
+    margin-top: 16px;
     display: grid;
     background-color: rgba(110, 118, 121, 0.403);
     grid-template-columns: 230px 1fr;  
@@ -373,6 +396,21 @@ article{
 
 .info__boxBk img{
     width: 32px;  
+}
+.backButton__Rotationbox{
+    width: 30px;
+    position: absolute;
+    border: solid 1px white;
+    background-color: rgba(110, 118, 121, 0.403);
+    top: 354px;
+    left: 328px;
+    cursor: pointer;
+    transition: .4s;
+}
+.backButton__Rotationbox:hover{ 
+    background-color: rgba(198, 201, 202, 0.936);
+    width: 32px;
+    left: 338px;
 }
 /* Box Back */
 

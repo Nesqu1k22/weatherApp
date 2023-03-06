@@ -100,7 +100,13 @@ buildBox = (object) => {
     const tempMinSvg = document.createElement('img')
     tempMinSvg.src= './src/img/tempmin.svg'
     tempMinSvg.classList.add('tempMinIcon')
-
+    const frontButtonRotation = document.createElement('img') 
+    frontButtonRotation.classList.add('frontButton__Rotationbox')
+    frontButtonRotation.src= './src/img/rotationArrow.svg'
+    const backButtonRotation = document.createElement('img') 
+    backButtonRotation.classList.add('backButton__Rotationbox')
+    backButtonRotation.src= './src/img/rotationArrow.svg'
+    
     //CONTAINER
     const container = document.createElement('article')
     container.classList.add('box__container'+boxEnumerator)
@@ -147,10 +153,10 @@ buildBox = (object) => {
     tempMin.textContent = object.tempMin
     infoBk.append(windSvg,windSpd,feelsTxt,feels,humSvg,hum,tempMaxSvg,tempMax,tempMinSvg,tempMin)
     boxBk2.append(ubiSvg,titleBk,tempBk,descBk)
-    boxBk.append(boxBk2,infoBk)
+    boxBk.append(backButtonRotation,boxBk2,infoBk)
     
     container.appendChild(boxBk)
-    secBoxs.appendChild(container)
+    
 
 
     //BOX front
@@ -178,32 +184,45 @@ buildBox = (object) => {
     img.src = object.image
     temp.textContent = object.temperature
     desc.textContent = object.description
-    boxFront.append(buttonDelete,title,img,temp,desc)
+    boxFront.append(frontButtonRotation,buttonDelete,title,img,temp,desc)
     container.appendChild(boxFront)
     secBoxs.appendChild(container)
     console.log(secBoxs)
-    console.log(object)
-    
-    
-    
-    
+    console.log(object)   
 }
 
-secBoxs.addEventListener('click', (event)=>{
-    // agregar o quitar (la clase para girar la caja)
-    if (event.target.tagName === 'ARTICLE'){
-        const container = document.querySelector('.'+event.target.classList.value)
+
+async function miFuncion() {
+    secBoxs.addEventListener('click', async (event)=>{
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        // agregar o quitar (la clase para girar la caja)
+        console.log(event.target.classList[0] + 'asdas')
+
+        if (event.target.classList[0] === 'frontButton__Rotationbox'){
+            const container = document.querySelector('.'+event.target.classList[0])
+
+            
+            console.log('entre')
+            console.log(container)
+            container.parentElement.classList.toggle('boxFrontHover')
+            container.parentNode.parentNode.childNodes[0].classList.toggle('boxBkHover')
+        }; 
         
-        console.log(container)
-        container.childNodes[0].classList.toggle('boxBkHover')
-        container.childNodes[1].classList.toggle('boxFrontHover')  
-    }
-    // eliminar caja
-    if (event.target.classList.value === 'button__boxFront') {
-        const container = document.querySelector('.'+event.target.parentNode.parentNode.className)
-        secBoxs.removeChild(container)
-    }
-})
+        if (event.target.classList[0] === 'backButton__Rotationbox') {
+            const container = document.querySelector('.'+event.target.classList[0])
+             console.log('entre2')
+            container.parentElement.classList.toggle('boxBkHover')
+            container.parentNode.parentNode.childNodes[1].classList.toggle('boxFrontHover')
+        }
+
+        // eliminar caja
+        if (event.target.classList.value === 'button__boxFront') {
+            const container = document.querySelector('.'+event.target.parentNode.parentNode.className)
+            secBoxs.removeChild(container)
+        }
+    });  
+}
+miFuncion();
 
 
 
