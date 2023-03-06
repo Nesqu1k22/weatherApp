@@ -104,10 +104,6 @@ input::placeholder {
     background-color: transparent;
 }
 
-article{
-    cursor: pointer;
-}
-
 /* CLASES PARA BACKGROUND*/
 .d01{
     background-image: url(https://i.postimg.cc/gcqpXn2J/cielodespejado.jpg);   
@@ -209,7 +205,7 @@ article{
     cursor: default;
     backface-visibility: hidden;
     overflow: hidden;
-    transition: .5s;
+    transition: .1s;
     transform: perspective(600px) rotateY(0deg);
     
     margin: 30px 5px 0 10px ;
@@ -290,7 +286,7 @@ article{
     position: absolute;
     backface-visibility: hidden;
     overflow: hidden;
-    transition: .5s;
+    transition: .1s;
     transform: perspective(600px) rotateY(0deg);
     clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
     padding-top: 20px;

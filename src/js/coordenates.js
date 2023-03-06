@@ -70,7 +70,6 @@ form.addEventListener('submit', async (e)=>{
 async function getData (Url){
     const response = await fetch (Url);
     const data =  await response.json();
-    console.log(data)
     weatherBox[i] = new weathers (data);
     buildBox(weatherBox[i])
     i++;
@@ -78,7 +77,7 @@ async function getData (Url){
 
 
 // enumerador de cajas reflejado en su clase
-let boxEnumerator = 0;
+let boxId = 0;
 // recibir objeto del array para construir html
 buildBox = (object) => {
     // SVG 
@@ -101,25 +100,24 @@ buildBox = (object) => {
     tempMinSvg.src= './src/img/tempmin.svg'
     tempMinSvg.classList.add('tempMinIcon')
     const frontButtonRotation = document.createElement('img') 
-    frontButtonRotation.classList.add('frontButton__Rotationbox')
+    frontButtonRotation.classList.add('frontButton__Rotationbox',`id${boxId}`)
     frontButtonRotation.src= './src/img/rotationArrow.svg'
     const backButtonRotation = document.createElement('img') 
-    backButtonRotation.classList.add('backButton__Rotationbox')
+    backButtonRotation.classList.add('backButton__Rotationbox',`id${boxId}`)
     backButtonRotation.src= './src/img/rotationArrow.svg'
     
     //CONTAINER
     const container = document.createElement('article')
-    container.classList.add('box__container'+boxEnumerator)
+    container.classList.add('box__container',`boxsId${boxId}`)
     boxArray.push(container)
-    boxEnumerator++
     
     //BOX back
     const boxBk = document.createElement('div')
     boxBk.classList.add(selectImg(object))
-    boxBk.classList.add('container__boxBk')
+    boxBk.classList.add('container__boxBk',`boxId${boxId}`)
     const boxBk2 = document.createElement('div')
     boxBk2.classList.add('head__boxBk')
-
+    
     const titleBk = document.createElement('h3') 
     titleBk.classList.add('title__boxBk')
     
@@ -157,28 +155,28 @@ buildBox = (object) => {
     
     container.appendChild(boxBk)
     
-
-
+    
+    
     //BOX front
     const boxFront = document.createElement('div')
     boxFront.classList.add(selectImg(object))
-    boxFront.classList.add('container__boxFront')
-
+    boxFront.classList.add('container__boxFront',`boxId${boxId}`)
+    
     const buttonDelete = document.createElement('img') 
     buttonDelete.classList.add('button__boxFront')
-
+    
     const title = document.createElement('h3') 
     title.classList.add('title__boxFront')
-
+    
     const img = document.createElement('img')
     img.classList.add('img__boxFront')
-
+    
     const temp = document.createElement('h1')
     temp.classList.add('temp__boxFront')
-
+    
     const desc = document.createElement('h3')
     desc.classList.add('description__boxFront')
-
+    
     buttonDelete.src = './src/img/trash.svg'
     title.textContent = object.city +' / '+ object.country
     img.src = object.image
@@ -186,31 +184,29 @@ buildBox = (object) => {
     desc.textContent = object.description
     boxFront.append(frontButtonRotation,buttonDelete,title,img,temp,desc)
     container.appendChild(boxFront)
-    secBoxs.appendChild(container)
-    console.log(secBoxs)
-    console.log(object)   
+    secBoxs.appendChild(container)  
+    
+    
+    boxId++
 }
 
 
-async function miFuncion() {
-    secBoxs.addEventListener('click', async (event)=>{
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    secBoxs.addEventListener('click',(event)=>{
+        
         // agregar o quitar (la clase para girar la caja)
-        console.log(event.target.classList[0] + 'asdas')
-
+        
+        
         if (event.target.classList[0] === 'frontButton__Rotationbox'){
-            const container = document.querySelector('.'+event.target.classList[0])
-
+            const container = document.querySelector(`.${event.target.classList[1]}`)
+            console.log(event.target.classList[1])
             
-            console.log('entre')
-            console.log(container)
-            container.parentElement.classList.toggle('boxFrontHover')
-            container.parentNode.parentNode.childNodes[0].classList.toggle('boxBkHover')
+            container.parentElement.classList.toggle('boxBkHover')
+            container.parentElement.parentElement.childNodes[1].classList.toggle('boxFrontHover')
         }; 
         
         if (event.target.classList[0] === 'backButton__Rotationbox') {
-            const container = document.querySelector('.'+event.target.classList[0])
-             console.log('entre2')
+            const container = document.querySelector(`.${event.target.classList[1]}`)
             container.parentElement.classList.toggle('boxBkHover')
             container.parentNode.parentNode.childNodes[1].classList.toggle('boxFrontHover')
         }
@@ -221,8 +217,7 @@ async function miFuncion() {
             secBoxs.removeChild(container)
         }
     });  
-}
-miFuncion();
+
 
 
 
