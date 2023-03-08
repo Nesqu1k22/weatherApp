@@ -213,7 +213,7 @@ buildBox = (object) => {
 
         // eliminar caja
         if (event.target.classList.value === 'button__boxFront') {
-            const container = document.querySelector('.'+event.target.parentNode.parentNode.className)
+            const container = document.querySelector('.'+event.target.parentNode.parentNode.classList[1])
             secBoxs.removeChild(container)
         }
     });  
